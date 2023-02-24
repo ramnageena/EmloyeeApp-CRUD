@@ -1,0 +1,80 @@
+<div class="col-md-6 offset-md-3 mt-3">
+
+  <form class="form-control">
+
+    <div class="text-center bg-primary" style="color:aliceblue">
+      <h3>Add New Employee</h3>
+    </div>
+    <hr>
+
+    <div class=" mb-3">
+      <label for="exampleInputEmail1" class="form-label">EId:</label>
+      <input type="text" class="form-control" placeholder="your id" [(ngModel)]="employeeObj.id" name="id">
+    </div>
+
+    <div class="  mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name:</label>
+      <input type="text" class="form-control" placeholder="  Enter your name" [(ngModel)]="employeeObj.name "
+        name="name">
+    </div>
+
+    <div class=" mb-3">
+      <label for="exampleInputEmail1" class="form-label"> Email: </label>
+      <input type="email" class="form-control" placeholder="Enter your email" [(ngModel)]="employeeObj.email"
+        name="email">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+
+    <div class="  mb-3">
+      <label for="exampleInputEmail1" class="form-label">Role:</label>
+      <input type="text" class="form-control" placeholder="  Enter your role" [(ngModel)]="employeeObj.role"
+        name="role">
+    </div>
+
+    <div class="  mb-3">
+      <label for="exampleInputEmail1" class="form-label">City:</label>
+      <input type="text" class="form-control" placeholder="  Enter your city" [(ngModel)]="employeeObj.city"
+        name="city">
+    </div>
+
+
+    <div class="  mb-3">
+      <label for="exampleInputEmail1" class="form-label">Phone No:</label>
+      <div class="input-group">
+        <div class="input-group-text">+91</div>
+        <input type="number" class="form-control" placeholder="  Enter your phone number"
+          [(ngModel)]="employeeObj.mobile" name="mobile">
+      </div>
+    </div>
+
+
+    <div class="  mb-3">
+      <label for="exampleInputEmail1" class="form-label">Sallary:</label>
+      <div class="input-group">
+        <div class="input-group-text">₹</div>
+        <input type="number" class="form-control" placeholder="  Enter your sallary" [(ngModel)]="employeeObj.sallary"
+          name="sallary">
+      </div>
+    </div>
+
+
+    <div class="  mb-3">
+      <label for="exampleInputEmail1" class="form-label">Age:</label>
+      <input type="number" class="form-control" placeholder="  Enter your age" [(ngModel)]="employeeObj.age" name="age">
+    </div>
+
+    <div class="  mb-3">
+      <label for="exampleInputEmail1" class="form-label">Marital Status</label>
+      <input type="text" class="form-control" placeholder="  Enter your marital Status" [(ngModel)]="employeeObj.status"
+        name="status">
+    </div>
+
+    <div class="text-center">
+
+      <button type="submit" class="btn btn-sm btn-warning" (click)="createEmployee()">Add New Employee</button>
+      <button type="submit" class="btn  btn-sm btn-dark mx-2" routerLink="/">Back</button>
+    </div>
+
+  </form>
+
+</div>

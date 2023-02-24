@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": "101",
+      "name": "Ram Tiwari",
+      "email": "ramtiwari8716@gmail.com",
+      "city": "chennai",
+      "role": "developer",
+      "mobile": 9149655413,
+      "sallary": 300000,
+      "age": 24,
+      "status": "Single"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

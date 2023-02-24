@@ -1,0 +1,36 @@
+<table class="table  table-striped mt-3">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">City</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Sallary</th>
+      <th scope="col">Age</th>
+      <th scope="col"> Marital Status</th>
+      <th scope="col">Action</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employee">
+      <td scope="row">{{emp.id}}</td>
+      <td scope="row">{{emp.name}}</td>
+      <td scope="row">{{emp.email}}</td>
+      <td scope="row">{{emp.city}}</td>
+      <td scope="row">{{emp.mobile}}</td>
+      <td scope="row">{{emp.sallary}}</td>
+      <td scope="row">{{emp.age}}</td>
+      <td scope="row">{{emp.status}}</td>
+
+      <td>
+        <button class="btn btn-info" routerLink="/updateEmployee/{{emp.id}}">Edit</button>
+        <button class="btn btn-danger mx-2" (click)="deleteEmployee(emp.id)">Delete</button>
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
